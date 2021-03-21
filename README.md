@@ -32,7 +32,7 @@ Our dataset consisted of (in order of label, number of data points):
 This data was taken from a variety of sources and then cleaned, preprocessed, and analyzed using exploratory data analysis.
 
 ### Modeling:
-![Screenshot](assets/model_.jpeg)
+![Screenshot](assets/model_.jpg)
 
 Our data was first passed into a Word2Vec model in the embedding layer. It was then passed into a Bidirectional LSTM of 128 nodes, which was regularized using L2. To assure that the bias-variance tradeoff would be as low as possible, this was passed into a second Dropout layer. The data was then passed into a Dense layer of 16 nodes, before being output in a softmax layer for classification. The model was compiled with categorical cross entropy and adam optimization.
 
